@@ -5,18 +5,48 @@
     <title>MNTN</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header page__main-header">
       <a href="index.html" class="logo">MNTN</a>
-      <nav class="main-nav">
+      <nav class="main-nav main-header__main-nav">
         <ul class="main-nav__site-list">
-          <li class="main-nav__item">Equipment</li>
-          <li class="main-nav__item">About us</li>
-          <li class="main-nav__item">Blog</li>
+          <li class="main-nav__item"><a class="main-nav__link link" href="#">Equipment</a></li>
+          <li class="main-nav__item"><a class="main-nav__link link" href="#">About us</a></li>
+          <li class="main-nav__item"><a class="main-nav__link link" href="#">Blog</a></li>
         </ul>
         <ul class="main-nav__user-list">
-          <li class="main-nav__item">Account</li>
+          <li class="main-nav__item"><a class="main-nav__link link" href="#">Account</a></li>
         </ul>
       </nav>
     </header>
+    <main class="main-section page__main-section">
+      <h1 class="visually-hidden">A Hiking guide "MNTN"</h1>
+
+      <section class="main-info main-section__main-info">
+        <h2 class="visually-hidden">Main info</h2>
+
+        <div class="main-info__slogan">
+          <p class="main-info__sub-slogan">A Hiking guide</p>
+          <p class="main-info__main-slogan">Be prepared for the Mountains and beyond!</p>
+          <button class="main-info__btn-scroll" type="button">scroll down</button>
+        </div>
+
+        <nav class="pagination-right">
+          <ul class="pagination-right__list">
+            <li class="pagination-right__item"><a href="#" class="pagination-right__link link">Start</a></li>
+            <li class="pagination-right__item"><a href="#" class="pagination-right__link link">1</a></li>
+            <li class="pagination-right__item"><a href="#" class="pagination-right__link link">2</a></li>
+            <li class="pagination-right__item"><a href="#" class="pagination-right__link link">3</a></li>
+          </ul>
+        </nav>
+
+        <div class="networks">
+          <p class="networks__text">Follow us</p>
+          <ul class="networks__list">
+            <li class="networks__item"><a class="networks__link" href="https://www.instagram.com/"><span class="visually-hidden">Instagram</span></a></li>
+            <li class="networks__item"><a class="networks__link" href="https://www.twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
