@@ -1,0 +1,22 @@
+@mixin no-indent {
+  margin: 0;
+  padding: 0;
+}
+@mixin no-mark {
+  list-style: none;
+}
+@mixin title-font {
+  font-family: "Chronicle", "Georgia", serif;
+}
+@mixin text-font {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+}
+@mixin text-font-l {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 500;
+}
+@mixin font($size, $height: $size) {
+  font-size: $size;
+  line-height: $height;
+}
