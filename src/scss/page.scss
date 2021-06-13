@@ -1,0 +1,11 @@
+@import "mixins";
+@import "variables";
+
+.page {
+  @include text-font;
+  font-size: 18px;
+
+  background-color: $dark-color;
+
+  color: white;
+}
