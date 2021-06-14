@@ -1,0 +1,45 @@
+@import "mixins";
+@import "variables";
+
+.main-info__sub-heading {
+  margin-bottom: 24px;
+}
+.main-info__heading {
+  margin-bottom: 40px;
+}
+.main-info__btn-scroll {
+  @include no-indent;
+  padding-right: 32px;
+
+  @include text-font;
+  border: none;
+  background: none;
+  color: white;
+
+  position: relative;
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+
+    width: 16px;
+    height: 24px;
+
+    background-image: url("../img/icon-arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: brightness(0) invert(1);
+  }
+
+  &:hover {
+    &::after {
+      filter: brightness(1) invert(0);
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
