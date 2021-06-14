@@ -5,9 +5,10 @@
   @include title-font;
   font-size: 32px;
   line-height: 38px;
+  letter-spacing: 1px;
 }
 .logo__wrap {
   @include no-indent;
-  
+
   width: 300px;
 }
