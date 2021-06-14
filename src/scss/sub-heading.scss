@@ -3,7 +3,8 @@
 
 .sub-heading {
   @include no-indent;
-  padding-left: 105px;
+  padding-left: 98px;
+
   letter-spacing: 6px;
 
   text-transform: uppercase;
@@ -23,4 +24,7 @@
 
     background-color: $accent-color;
   }
+}
+.sub-heading--main {
+  padding-left: 105px;
 }

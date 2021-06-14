@@ -22,3 +22,12 @@
   left: 0;
   top: 433px;
 }
+.page__main-info {
+  margin-bottom: 845px;
+}
+.page__main-page-article {
+  margin-bottom: 200px;
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+}

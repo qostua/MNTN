@@ -5,6 +5,7 @@
   @include font(64px, 77px);
   @include title-font;
   @include no-indent;
+  letter-spacing: 1.5px;
 }
 .heading--main {
   @include font(88px, 100px);
