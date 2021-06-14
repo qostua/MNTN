@@ -9,6 +9,10 @@
 }
 .logo__wrap {
   @include no-indent;
-
+}
+.logo__wrap--header {
   width: 300px;
+}
+.logo__wrap--footer {
+  margin-bottom: 24px;
 }
