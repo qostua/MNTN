@@ -1,0 +1,35 @@
+@import "mixins";
+@import "variables";
+
+.pagination-right {
+
+}
+.pagination-right__list {
+  @include no-mark;
+
+  @include no-indent;
+
+  text-align: right;
+}
+.pagination-right__item {
+  @include font(18px, 22px);
+
+  border-right: 3px solid rgba(255,255,255,0.5);
+
+  &:hover {
+    color: $accent-color;
+    border-right-color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+.pagination-right__item--activt {
+  border-right-color: white;
+}
+.pagination-right__link {
+  display: inline-block;
+
+  padding: 19px 32px 19px 0;
+}
