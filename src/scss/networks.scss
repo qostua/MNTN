@@ -1,0 +1,66 @@
+@import "mixins";
+@import "variables";
+
+.networks {
+  display: inline-block;
+
+  transform: rotate(90deg);
+}
+.networks__list {
+  @include no-indent;
+
+  @include no-mark;
+
+  display: flex;
+
+  @include font(18px);
+}
+.networks__item {
+  margin-right: 28px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.networks__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  position: relative;
+
+  transform: rotate(-90deg);
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px auto;
+
+    filter: brightness(0) invert(1);
+  }
+
+  &:hover::after {
+    filter: brightness(1) invert(0);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+.networks__link--insta {
+  &::after {
+    background-image: url("../img/icon-insta.svg");
+  }
+}
+.networks__link--twitter {
+  &::after {
+    background-image: url("../img/icon-twitter.svg");
+  }
+}
