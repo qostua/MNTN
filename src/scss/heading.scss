@@ -1,0 +1,13 @@
+@import "mixins";
+@import "variables";
+
+.heading {
+  @include font(64px, 77px);
+  @include title-font;
+  @include no-indent;
+}
+.heading--main {
+  @include font(88px, 100px);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
