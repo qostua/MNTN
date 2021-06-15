@@ -6,6 +6,12 @@
   font-size: 18px;
 
   background-color: $dark-color;
+  background-image: url(../img/main-background@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/main-background@2x.jpg);
+  }
 
   color: white;
 }
