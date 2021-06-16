@@ -69,7 +69,7 @@ const imgToApp = () => {
     .pipe(dest('./app/img'))
 }
 const convertWebp = () => {
-	return src('./src/img/**.{jpg,png}')
+	return src(['./src/img/**.{jpg,png}', '!./src/img/css-*.{jpg,png}'])
 		.pipe(webp({quality: 90}))
 		.pipe(dest('./app/img'))
 }
