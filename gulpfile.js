@@ -24,7 +24,7 @@ const uglify = require('gulp-uglify-es').default;
 
 
 const svgSprites = () => {
-	return src('./src/img/**.svg')
+	return src('./src/img/icon-*.svg')
 		.pipe(svgSprite({
 			mode: {
 				stack: {
