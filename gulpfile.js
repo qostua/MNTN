@@ -134,7 +134,7 @@ const watchFiles = () => {
     watch('./src/img/**.{jpg,png,svg}', imgToApp);
     watch('./src/img/**.svg', svgSprites);
 		watch('./src/resources/**', resources);
-		watch('./src/fonts/**.ttf', fonts);
+		watch('./src/fonts/**.{ttf,woff,woff2}', fonts);
 		watch('./src/js/**/*.js', scripts);
 }
 
