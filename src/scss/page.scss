@@ -1,6 +1,10 @@
 @import "mixins";
 @import "variables";
 
+:focus-visible {
+  outline: 0;
+  outline: 2px solid $accent-color;
+}
 .page {
   @include text-font;
   font-size: 18px;
