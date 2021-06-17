@@ -1,9 +1,6 @@
 @import "mixins";
 @import "variables";
 
-.pagination-right {
-
-}
 .pagination-right__list {
   @include no-mark;
 
@@ -13,6 +10,7 @@
 }
 .pagination-right__item {
   @include font(18px, 22px);
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
 
   border-right: 3px solid rgba(255,255,255,0.5);
 
